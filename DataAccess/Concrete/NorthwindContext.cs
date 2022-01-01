@@ -20,6 +20,13 @@ namespace DataAccess.Concrete
         public DbSet<ProductDetail> ProductDetails { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<District> Districts { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+        public DbSet<Basket> Baskets { get; set; }
+        public DbSet<BasketDetail> BasketDetails { get; set; }
+        public DbSet<CategorySub> CategorySubs { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<CreditCart> CreditCarts { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
     }
 }

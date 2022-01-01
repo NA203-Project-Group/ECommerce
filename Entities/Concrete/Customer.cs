@@ -12,7 +12,11 @@ namespace Entities.Concrete
         public int CustomerID { get; set; }
         public string CustomerName { get; set; }
         public string CustomerSurname { get; set; }
-        public string Deneme { get; set; }
-
+        public string CustomerMail { get; set; }
+        public string CustomerPassword { get; set; }
+        public string CustomerGsm { get; set; }
+        public int CartID { get; set; }
+        public int CommnetID { get; set; }
+        public int AddressID { get; set; }
     }
 }
