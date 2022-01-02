@@ -18,29 +18,32 @@ namespace Business.Concrete
         {
             _categorySubDal = categorySubDal;
         }
-        public DataResult<List<CategorySub>> GetAll()
+        public IDataResult<List<CategorySub>> GetAll()
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<List<CategorySub>>(_categorySubDal.GetAll());
         }
 
-        public DataResult<CategorySub> Get(int id)
+        public IDataResult<CategorySub> Get(int id)
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<CategorySub>(_categorySubDal.Get(c => c.CategorySubID == id));
         }
 
-        public Result Add(CategorySub entity)
+        public IResult Add(CategorySub entity)
         {
-            throw new NotImplementedException();
+            _categorySubDal.Add(entity);
+            return new SuccessResult();
         }
 
-        public Result Update(CategorySub entity)
+        public IResult Update(CategorySub entity)
         {
-            throw new NotImplementedException();
+            _categorySubDal.Update(entity);
+            return new SuccessResult();
         }
 
-        public Result Delete(CategorySub entity)
+        public IResult Delete(CategorySub entity)
         {
-            throw new NotImplementedException();
+            _categorySubDal.Delete(entity);
+            return new SuccessResult();
         }
     }
 }

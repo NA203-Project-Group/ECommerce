@@ -19,29 +19,37 @@ namespace Business.Concrete
             _adressDal = adressDal;
         }
 
-        public DataResult<List<Address>> GetAll()
+        public IDataResult<List<Address>> GetAll()
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<List<Address>>(_adressDal.GetAll());
         }
 
-        public DataResult<Address> Get(int id)
+        public IDataResult<Address> Get(int id)
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<Address>(_adressDal.Get(a=>a.ID == 1));
         }
 
-        public Result Add(Address entity)
+        public IResult Add(Address entity)
         {
-            throw new NotImplementedException();
+            _adressDal.Add(entity);
+            return new SuccessResult();
         }
 
-        public Result Update(Address entity)
+        public IResult Update(Address entity)
         {
-            throw new NotImplementedException();
+            _adressDal.Update(entity);
+            return new SuccessResult();
         }
 
-        public Result Delete(Address entity)
+        public IResult Delete(Address entity)
         {
-            throw new NotImplementedException();
+            _adressDal.Delete(entity);
+            return new SuccessResult();
+        }
+
+        public IDataResult<Address> GetByAddressId(int addressId)
+        {
+            return new SuccessDataResult<Address>(_adressDal.Get(a => a.AddressID == addressId));
         }
     }
 }

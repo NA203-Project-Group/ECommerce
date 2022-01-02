@@ -18,29 +18,36 @@ namespace Business.Concrete
         {
             _creditCartDal = creditCartDal;
         }
-        public DataResult<List<CreditCart>> GetAll()
+        public IDataResult<List<CreditCart>> GetAll()
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<List<CreditCart>>(_creditCartDal.GetAll());
         }
 
-        public DataResult<CreditCart> Get(int id)
+        public IDataResult<CreditCart> Get(int id)
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<CreditCart>(_creditCartDal.Get(c => c.ID == id));
+        }
+        public IDataResult<CreditCart> GetByCartId(int cartId)
+        {
+            return new SuccessDataResult<CreditCart>(_creditCartDal.Get(c => c.CartID == cartId));
+        }
+        public IResult Add(CreditCart entity)
+        {
+            _creditCartDal.Add(entity);
+            return new SuccessResult();
         }
 
-        public Result Add(CreditCart entity)
+        public IResult Update(CreditCart entity)
         {
-            throw new NotImplementedException();
+            _creditCartDal.Update(entity);
+            return new SuccessResult();
         }
 
-        public Result Update(CreditCart entity)
+        public IResult Delete(CreditCart entity)
         {
-            throw new NotImplementedException();
+             _creditCartDal.Delete(entity);
+            return new SuccessResult();
         }
 
-        public Result Delete(CreditCart entity)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

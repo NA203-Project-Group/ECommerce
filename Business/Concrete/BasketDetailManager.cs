@@ -18,29 +18,32 @@ namespace Business.Concrete
         {
             _basketDetailDal = basketDetailDal;
         }
-        public DataResult<List<BasketDetail>> GetAll()
+        public IDataResult<List<BasketDetail>> GetAll()
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<List<BasketDetail>>(_basketDetailDal.GetAll());
         }
 
-        public DataResult<BasketDetail> Get(int id)
+        public IDataResult<BasketDetail> Get(int id)
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<BasketDetail>(_basketDetailDal.Get(bD => bD.BastekDetailID == id));
         }
 
-        public Result Add(BasketDetail entity)
+        public IResult Add(BasketDetail entity)
         {
-            throw new NotImplementedException();
+           _basketDetailDal.Add(entity);
+           return new SuccessResult();
         }
 
-        public Result Update(BasketDetail entity)
+        public IResult Update(BasketDetail entity)
         {
-            throw new NotImplementedException();
+            _basketDetailDal.Update(entity);
+            return new SuccessResult();
         }
 
-        public Result Delete(BasketDetail entity)
+        public IResult Delete(BasketDetail entity)
         {
-            throw new NotImplementedException();
+            _basketDetailDal.Delete(entity);
+            return new SuccessResult();
         }
     }
 }

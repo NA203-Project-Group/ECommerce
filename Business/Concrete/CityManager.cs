@@ -19,29 +19,32 @@ namespace Business.Concrete
             _cityDal = cityDal;
         }
 
-        public DataResult<List<City>> GetAll()
+        public IDataResult<List<City>> GetAll()
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<List<City>>(_cityDal.GetAll());
         }
 
-        public DataResult<City> Get(int id)
+        public IDataResult<City> Get(int id)
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<City>(_cityDal.Get(c => c.CityID == id));
         }
 
-        public Result Add(City entity)
+        public IResult Add(City entity)
         {
-            throw new NotImplementedException();
+            _cityDal.Add(entity);
+            return new SuccessResult();
         }
 
-        public Result Update(City entity)
+        public IResult Update(City entity)
         {
-            throw new NotImplementedException();
+            _cityDal.Update(entity);
+            return new SuccessResult();
         }
 
-        public Result Delete(City entity)
+        public IResult Delete(City entity)
         {
-            throw new NotImplementedException();
+            _cityDal.Delete(entity);
+            return new SuccessResult();
         }
     }
 }

@@ -18,29 +18,33 @@ namespace Business.Concrete
         {
             _commentDal = commentDal;
         }
-        public DataResult<List<Comment>> GetAll()
+        public IDataResult<List<Comment>> GetAll()
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<List<Comment>>(_commentDal.GetAll());
         }
 
-        public DataResult<Comment> Get(int id)
+        public IDataResult<Comment> Get(int id)
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<Comment>(_commentDal.Get(c=>c.CommentID == id));
         }
 
-        public Result Add(Comment entity)
+        public IResult Add(Comment entity)
         {
-            throw new NotImplementedException();
+            _commentDal.Add(entity);
+            return new SuccessResult();
         }
 
-        public Result Update(Comment entity)
+        public IResult Update(Comment entity)
         {
-            throw new NotImplementedException();
+            _commentDal.Update(entity);
+            return new SuccessResult();
         }
 
-        public Result Delete(Comment entity)
+        public IResult Delete(Comment entity)
         {
-            throw new NotImplementedException();
+            _commentDal.Delete(entity);
+
+            return new SuccessResult();
         }
     }
 }

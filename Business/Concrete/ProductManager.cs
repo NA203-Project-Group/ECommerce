@@ -19,29 +19,32 @@ namespace Business.Concrete
             _productDal = productDal;
         }
 
-        public DataResult<List<Product>> GetAll()
+        public IDataResult<List<Product>> GetAll()
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<List<Product>>(_productDal.GetAll());
         }
 
-        public DataResult<Product> Get(int id)
+        public IDataResult<Product> Get(int id)
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<Product>(_productDal.Get(p => p.ProductId == id));
         }
 
-        public Result Add(Product entity)
+        public IResult Add(Product entity)
         {
-            throw new NotImplementedException();
+            _productDal.Add(entity);
+            return new SuccessResult();
         }
 
-        public Result Update(Product entity)
+        public IResult Update(Product entity)
         {
-            throw new NotImplementedException();
+            _productDal.Update(entity);
+            return new SuccessResult();
         }
 
-        public Result Delete(Product entity)
+        public IResult Delete(Product entity)
         {
-            throw new NotImplementedException();
+            _productDal.Delete(entity);
+            return new SuccessResult();
         }
     }
 }

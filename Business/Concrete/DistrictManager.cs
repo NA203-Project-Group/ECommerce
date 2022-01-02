@@ -19,29 +19,32 @@ namespace Business.Concrete
            _districtDal = districtDal;
        }
 
-       public DataResult<List<District>> GetAll()
+       public IDataResult<List<District>> GetAll()
        {
-           throw new NotImplementedException();
+           return new SuccessDataResult<List<District>>(_districtDal.GetAll());
        }
 
-       public DataResult<District> Get(int id)
+       public IDataResult<District> Get(int id)
        {
-           throw new NotImplementedException();
+           return new SuccessDataResult<District>(_districtDal.Get(d => d.DistrictID == id));
        }
 
-       public Result Add(District entity)
+       public IResult Add(District entity)
        {
-           throw new NotImplementedException();
-       }
+           _districtDal.Add(entity);
+           return new SuccessResult();
+        }
 
-       public Result Update(District entity)
+       public IResult Update(District entity)
        {
-           throw new NotImplementedException();
-       }
+           _districtDal.Update(entity);
+           return new SuccessResult();
+        }
 
-       public Result Delete(District entity)
+       public IResult Delete(District entity)
        {
-           throw new NotImplementedException();
-       }
+           _districtDal.Delete(entity);
+           return new SuccessResult();
+        }
    }
 }
