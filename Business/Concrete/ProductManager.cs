@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Business.Abstract;
+using Business.ValidationRules.FluentValidation;
+using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -31,6 +33,7 @@ namespace Business.Concrete
 
         public IResult Add(Product entity)
         {
+            ValidationTool.Validate(new ProductValidator(),entity);
             _productDal.Add(entity);
             return new SuccessResult();
         }

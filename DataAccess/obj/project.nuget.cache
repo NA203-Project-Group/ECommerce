@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "AhA7nwvt2yGl75+e+lcclU+T36BsYYvI6T300Y4JOq0pYK1sUJ4mwv+FzlnLYI031WvmiRaYSBaimGgvfT4LNw==",
+  "dgSpecHash": "/L04mhalFMrtxL55B4DLcxAtTfn9YDaXxQ1g4j4YR72UaUBWtbw5HALRUs7Wl3/u3gqzKOKNk/MPS81XY5Ef0Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Barış\\source\\repos\\NA203-Project-Group\\ECommerce\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Barış\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\Barış\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Barış\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Barış\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

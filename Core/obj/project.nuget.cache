@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mDhAolUQZhutS8N+uq1WSigLKc38orfK7KYtRQTxvjqKLUuruKb5ACSoAdx2bovwGJLgpugWUgxwb+CJzc1Zug==",
+  "dgSpecHash": "61riQa/YQ37rY3sF7icMlnisPgNl87/oh7HHQGipxGM96U/KHGCdPclhs4LPbd2afTWzWMlgf3HcYaMFsBEaVg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Barış\\source\\repos\\NA203-Project-Group\\ECommerce\\Core\\Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Barış\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\Barış\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Barış\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Barış\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

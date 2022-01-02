@@ -12,44 +12,44 @@ namespace Business.Concrete
 {
     public class AddressManager : IAddressService
     {
-        private IAddressDal _adressDal;
+        private IAddressDal _addressDal;
 
-        public AddressManager(IAddressDal adressDal)
+        public AddressManager(IAddressDal addressDal)
         {
-            _adressDal = adressDal;
+            _addressDal = addressDal;
         }
 
         public IDataResult<List<Address>> GetAll()
         {
-            return new SuccessDataResult<List<Address>>(_adressDal.GetAll());
+            return new SuccessDataResult<List<Address>>(_addressDal.GetAll());
         }
 
         public IDataResult<Address> Get(int id)
         {
-            return new SuccessDataResult<Address>(_adressDal.Get(a=>a.ID == 1));
+            return new SuccessDataResult<Address>(_addressDal.Get(a=>a.ID == ));
         }
 
         public IResult Add(Address entity)
         {
-            _adressDal.Add(entity);
+            _addressDal.Add(entity);
             return new SuccessResult();
         }
 
         public IResult Update(Address entity)
         {
-            _adressDal.Update(entity);
+            _addressDal.Update(entity);
             return new SuccessResult();
         }
 
         public IResult Delete(Address entity)
         {
-            _adressDal.Delete(entity);
+            _addressDal.Delete(entity);
             return new SuccessResult();
         }
 
         public IDataResult<Address> GetByAddressId(int addressId)
         {
-            return new SuccessDataResult<Address>(_adressDal.Get(a => a.AddressID == addressId));
+            return new SuccessDataResult<Address>(_addressDal.Get(a => a.AddressID == addressId));
         }
     }
 }
