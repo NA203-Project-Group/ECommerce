@@ -36,3 +36,11 @@ C:\Users\Barış\source\repos\NA203-Project-Group\ECommerce\Business\obj\Debug\n
 C:\Users\Barış\source\repos\NA203-Project-Group\ECommerce\Business\obj\Debug\net5.0\Business.dll
 C:\Users\Barış\source\repos\NA203-Project-Group\ECommerce\Business\obj\Debug\net5.0\ref\Business.dll
 C:\Users\Barış\source\repos\NA203-Project-Group\ECommerce\Business\obj\Debug\net5.0\Business.pdb
+C:\Users\Mustafa\Desktop\ECommerce\Business\obj\Debug\net5.0\Business.csproj.AssemblyReference.cache
+C:\Users\Mustafa\Desktop\ECommerce\Business\obj\Debug\net5.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mustafa\Desktop\ECommerce\Business\obj\Debug\net5.0\Business.AssemblyInfoInputs.cache
+C:\Users\Mustafa\Desktop\ECommerce\Business\obj\Debug\net5.0\Business.AssemblyInfo.cs
+C:\Users\Mustafa\Desktop\ECommerce\Business\obj\Debug\net5.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\Mustafa\Desktop\ECommerce\Business\obj\Debug\net5.0\Business.dll
+C:\Users\Mustafa\Desktop\ECommerce\Business\obj\Debug\net5.0\ref\Business.dll
+C:\Users\Mustafa\Desktop\ECommerce\Business\obj\Debug\net5.0\Business.pdb

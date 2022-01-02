@@ -1,0 +1,10 @@
+C:\Users\Mustafa\Desktop\ECommerce\WebAPI\obj\Debug\net5.0\WebAPI.csproj.AssemblyReference.cache
+C:\Users\Mustafa\Desktop\ECommerce\WebAPI\obj\Debug\net5.0\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mustafa\Desktop\ECommerce\WebAPI\obj\Debug\net5.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\Mustafa\Desktop\ECommerce\WebAPI\obj\Debug\net5.0\WebAPI.AssemblyInfo.cs
+C:\Users\Mustafa\Desktop\ECommerce\WebAPI\obj\Debug\net5.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Mustafa\Desktop\ECommerce\WebAPI\obj\Debug\net5.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Mustafa\Desktop\ECommerce\WebAPI\obj\Debug\net5.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Mustafa\Desktop\ECommerce\WebAPI\obj\Debug\net5.0\WebAPI.dll
+C:\Users\Mustafa\Desktop\ECommerce\WebAPI\obj\Debug\net5.0\ref\WebAPI.dll
+C:\Users\Mustafa\Desktop\ECommerce\WebAPI\obj\Debug\net5.0\WebAPI.pdb

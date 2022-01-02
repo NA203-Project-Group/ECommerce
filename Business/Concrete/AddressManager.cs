@@ -26,7 +26,7 @@ namespace Business.Concrete
 
         public IDataResult<Address> Get(int id)
         {
-            return new SuccessDataResult<Address>(_addressDal.Get(a=>a.ID == ));
+            return new SuccessDataResult<Address>(_addressDal.Get(a=>a.ID == id));
         }
 
         public IResult Add(Address entity)
