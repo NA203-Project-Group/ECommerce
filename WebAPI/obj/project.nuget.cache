@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TmoPfzJrG8TNfoA+zwSQ3rG61NE6fHf3UCv6r7IiPUg1vKi9aOrTdzzCE1KOGhrC3tSawegdCx1wdsGkvWw4hg==",
+  "dgSpecHash": "/4fg0B1MVWIc8RP5ulk8CCnDxTflKfcwDFzPcansNcFtGE7T5j+vWrxsajdokW3hb5XoXuzfJH0KjSHQ+YfYRA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Barış\\source\\repos\\NA203-Project-Group\\ECommerce\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Barış\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\Barış\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\Barış\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Barış\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
