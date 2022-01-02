@@ -12,7 +12,7 @@ namespace DataAccess.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server = GVNBRS\MSSQLSERVER01;Database=Northwind;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(@"Server = GVNBRS\MSSQLSERVER01;Database=ECommerce;Trusted_Connection=true");
         }
 
         public DbSet<Product> Products { get; set; }
