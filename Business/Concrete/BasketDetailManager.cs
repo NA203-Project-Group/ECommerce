@@ -25,7 +25,7 @@ namespace Business.Concrete
 
         public IDataResult<BasketDetail> Get(int id)
         {
-            return new SuccessDataResult<BasketDetail>(_basketDetailDal.Get(bD => bD.BastekDetailID == id));
+            return new SuccessDataResult<BasketDetail>(_basketDetailDal.Get(bD => bD.BasketDetailID == id));
         }
 
         public IResult Add(BasketDetail entity)

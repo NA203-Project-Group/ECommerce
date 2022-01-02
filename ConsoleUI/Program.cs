@@ -12,26 +12,16 @@ namespace ConsoleUI
         {
             ProductManager productManager = new ProductManager(new EfProductDal());
 
-            //foreach (var product in productManager.GetAll())
-            //{
-            //    string json = JsonConvert.SerializeObject(product, Formatting.Indented);
-            //    Console.WriteLine(json);
-            //}
-
-            //Product productAdd = new Product
-            //{
-            //    ProductName = "Tavuk Çorbası",
-            //    CategoryId = 6,
-            //    UnitPrice = Convert.ToDecimal(6.50),
-            //    UnitsInStock = 15
-            //};
-            //productManager.Add(productAdd);
-            //CategoryId,CategoryName
+            foreach (var product in productManager.GetAll().Data)
+            {
+                string json = JsonConvert.SerializeObject(product, Formatting.Indented);
+                Console.WriteLine(json);
+            }
 
 
             CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
 
-            foreach (var category in categoryManager.GetAll())
+            foreach (var category in categoryManager.GetAll().Data)
             {
                 string json = JsonConvert.SerializeObject(category, Formatting.Indented);
                 Console.WriteLine(json);

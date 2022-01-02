@@ -15,7 +15,8 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(x => x.StockAmount).NotNull();
             RuleFor(x => x.ProductDescription).NotEmpty();
             RuleFor(x => x.ProductDescription).MaximumLength(250);
-            
+            RuleFor(x => x.ProductID).NotNull();
+
         }
     }
 }

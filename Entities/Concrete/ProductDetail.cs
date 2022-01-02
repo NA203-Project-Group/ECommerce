@@ -10,6 +10,7 @@ namespace Entities.Concrete
     public class ProductDetail :IEntity
     {
         public int ProductDetailID { get; set; }
+        public int ProductID { get; set; }
         public DateTime ProductAddedTime { get; set; }
         public int StockAmount { get; set; }
         public string ProductDescription { get; set; }

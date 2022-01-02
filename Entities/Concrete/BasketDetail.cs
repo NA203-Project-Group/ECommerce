@@ -9,7 +9,7 @@ namespace Entities.Concrete
 {
     public class BasketDetail : IEntity
     {
-        public int BastekDetailID { get; set; }
+        public int BasketDetailID { get; set; }
         public int  BasketID { get; set; }
         public int ProductID { get; set; }
         public DateTime InstalmentDate { get; set; }
