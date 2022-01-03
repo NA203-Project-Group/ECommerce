@@ -77,3 +77,5 @@ C:\Users\Barış\source\repos\NA203-Project-Group\ECommerce\WebAPI\obj\Debug\net
 C:\Users\Barış\source\repos\NA203-Project-Group\ECommerce\WebAPI\obj\Debug\net5.0\ref\WebAPI.dll
 C:\Users\Barış\source\repos\NA203-Project-Group\ECommerce\WebAPI\obj\Debug\net5.0\WebAPI.pdb
 C:\Users\Barış\source\repos\NA203-Project-Group\ECommerce\WebAPI\obj\Debug\net5.0\WebAPI.genruntimeconfig.cache
+C:\Users\Barış\source\repos\NA203-Project-Group\ECommerce\WebAPI\bin\Debug\net5.0\Autofac.Extras.DynamicProxy.dll
+C:\Users\Barış\source\repos\NA203-Project-Group\ECommerce\WebAPI\bin\Debug\net5.0\Castle.Core.dll

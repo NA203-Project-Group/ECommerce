@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Business.Abstract;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -28,7 +30,7 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<Address>(_addressDal.Get(a=>a.ID == id));
         }
-
+        [ValidationAspect(typeof(AddressValidator))]
         public IResult Add(Address entity)
         {
             _addressDal.Add(entity);
