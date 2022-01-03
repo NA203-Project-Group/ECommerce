@@ -8,6 +8,7 @@ using Business.ValidationRules.FluentValidation;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 
 namespace Business.Concrete
@@ -18,6 +19,7 @@ namespace Business.Concrete
 
         public ProductManager(IProductDal productDal) 
         {
+
             _productDal = productDal;
         }
 
@@ -33,7 +35,8 @@ namespace Business.Concrete
 
         public IResult Add(Product entity)
         {
-            ValidationTool.Validate(new ProductValidator(),entity);
+            ValidationTool.Validate(new ProductValidator(), entity);
+
             _productDal.Add(entity);
             return new SuccessResult();
         }

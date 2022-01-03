@@ -11,6 +11,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Business.Abstract;
+using Business.Concrete;
+using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework;
 
 namespace WebAPI
 {
@@ -28,6 +32,10 @@ namespace WebAPI
         {
 
             services.AddControllers();
+            services.AddSingleton<IAddressService, AddressManager>();
+            services.AddSingleton<IAddressDal, EfAddressDal>();
+
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPI", Version = "v1" });

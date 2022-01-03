@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Core.Utilities.Results
 {
-    public class ErrorResult : Results.Result
+    public class ErrorResult : Result
     {
         public ErrorResult(string messages) : base(messages, false)
         {

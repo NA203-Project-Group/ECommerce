@@ -13,10 +13,10 @@ namespace Core.Utilities.Results
         {
             Messages = messages;
         }
+
         public Result(bool success)
         {
             Success = success;
-
         }
 
         public bool Success { get; }
