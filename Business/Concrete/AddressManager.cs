@@ -49,7 +49,7 @@ namespace Business.Concrete
 
         public IDataResult<Address> GetByAddressId(int addressId)
         {
-            return new SuccessDataResult<Address>(_addressDal.Get(a => a.AddressID == addressId));
+            throw new NotImplementedException();
         }
     }
 }

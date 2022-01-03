@@ -1,5 +1,6 @@
 ﻿using Business.Concrete;
 using System;
+using DataAccess.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using Newtonsoft.Json;
@@ -12,20 +13,29 @@ namespace ConsoleUI
         {
             ProductManager productManager = new ProductManager(new EfProductDal());
 
-            foreach (var product in productManager.GetAll().Data)
+            //foreach (var product in productManager.GetAll().Data)
+            //{
+            //    string json = JsonConvert.SerializeObject(product, Formatting.Indented);
+            //    Console.WriteLine(json);
+            //}
+
+            Product product = new Product
             {
-                string json = JsonConvert.SerializeObject(product, Formatting.Indented);
-                Console.WriteLine(json);
-            }
+                ProductImage = "yazıolı",
+                UnitPrice = 199,
+                Favorite = true,
+                CategoryId = 1,
+                
+            };
+            productManager.Add(product);
 
+            //CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
 
-            CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
-
-            foreach (var category in categoryManager.GetAll().Data)
-            {
-                string json = JsonConvert.SerializeObject(category, Formatting.Indented);
-                Console.WriteLine(json);
-            }
+            //foreach (var category in categoryManager.GetAll().Data)
+            //{
+            //    string json = JsonConvert.SerializeObject(category, Formatting.Indented);
+            //    Console.WriteLine(json);
+            //}
         }
 
     }
