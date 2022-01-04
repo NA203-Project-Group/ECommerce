@@ -7412,19 +7412,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Barış\\.nuget\\packages\\": {}
+    "C:\\Users\\Mustafa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Barış\\source\\repos\\NA203-Project-Group\\ECommerce\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\Mustafa\\Desktop\\ECommerce\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\Barış\\source\\repos\\NA203-Project-Group\\ECommerce\\Core\\Core.csproj",
-      "packagesPath": "C:\\Users\\Barış\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Barış\\source\\repos\\NA203-Project-Group\\ECommerce\\Core\\obj\\",
+      "projectPath": "C:\\Users\\Mustafa\\Desktop\\ECommerce\\Core\\Core.csproj",
+      "packagesPath": "C:\\Users\\Mustafa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mustafa\\Desktop\\ECommerce\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Barış\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mustafa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7478,7 +7478,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
