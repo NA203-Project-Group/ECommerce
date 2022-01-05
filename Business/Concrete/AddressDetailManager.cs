@@ -47,6 +47,7 @@ namespace Business.Concrete
         {
             _addressDetailDal.Delete(entity);
             return new SuccessResult();
+
         }
     }
 }

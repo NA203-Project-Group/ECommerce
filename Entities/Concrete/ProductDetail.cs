@@ -14,6 +14,7 @@ namespace Entities.Concrete
         public DateTime ProductAddedTime { get; set; }
         public int StockAmount { get; set; }
         public string ProductDescription { get; set; }
+    
 
     }
 }

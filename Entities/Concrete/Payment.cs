@@ -16,5 +16,7 @@ namespace Entities.Concrete
         public int ExpenseID { get; set; }
         public int CampaingID { get; set; }
         public int TotalPrice { get; set; }
+        public int AddressID { get; set; }
+
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,10 +14,12 @@ namespace Business.Concrete
     public class BasketDetailManager : IBasketDetailService
     {
         private IBasketDetailDal _basketDetailDal;
+        private IProductDetailDal _productDetailDal;
 
-        public BasketDetailManager(IBasketDetailDal basketDetailDal)
+        public BasketDetailManager(IBasketDetailDal basketDetailDal, IProductDetailDal productDetailDal)
         {
             _basketDetailDal = basketDetailDal;
+            _productDetailDal = productDetailDal;
         }
         public IDataResult<List<BasketDetail>> GetAll()
         {
@@ -36,6 +39,7 @@ namespace Business.Concrete
 
         public IResult Update(BasketDetail entity)
         {
+
             _basketDetailDal.Update(entity);
             return new SuccessResult();
         }
@@ -44,6 +48,16 @@ namespace Business.Concrete
         {
             _basketDetailDal.Delete(entity);
             return new SuccessResult();
+        }
+
+        private IResult CheckQuantityCount(BasketDetail basketDetail)
+        {
+            var productDetail =  _productDetailDal.Get(p => p.ProductID == basketDetail.ProductID);
+            if (productDetail.StockAmount > basketDetail.Quantity)
+            {
+                return new SuccessResult();
+            }
+            return new ErrorResult();
         }
     }
 }

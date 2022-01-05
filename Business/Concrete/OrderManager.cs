@@ -17,6 +17,7 @@ namespace Business.Concrete
         public OrderManager(IOrderDal orderDal)
         {
             _orderDal = orderDal;
+
         }
         public IDataResult<List<Order>> GetAll()
         {
@@ -46,5 +47,6 @@ namespace Business.Concrete
             _orderDal.Delete(entity);
             return new SuccessResult();
         }
+
     }
 }
