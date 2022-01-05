@@ -12,7 +12,8 @@ namespace Entities.Concrete
         public int BasketDetailID { get; set; }
         public int  BasketID { get; set; }
         public int ProductID { get; set; }
-        public DateTime InstalmentDate { get; set; }
-        public int CustomerID { get; set; }
+        public int Quantity { get; set; }
+        public decimal BasketPrice { get; set; }
+
     }
 }

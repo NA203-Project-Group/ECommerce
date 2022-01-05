@@ -30,7 +30,7 @@ namespace Business.Concrete
 
         public IDataResult<Product> Get(int id)
         {
-            return new SuccessDataResult<Product>(_productDal.Get(p => p.ProductId == id));
+            return new SuccessDataResult<Product>(_productDal.Get(p => p.ProductID == id));
         }
 
         public IResult Add(Product entity)

@@ -14,10 +14,8 @@ namespace Business.ValidationRules.FluentValidation
         {
             RuleFor(x => x.ProductName).NotEmpty();
             RuleFor(x => x.ProductImage).NotEmpty();
-            RuleFor(x => x.CategoryId).NotNull();
+            RuleFor(x => x.CategoryID).NotNull();
             RuleFor(x => x.UnitPrice).NotNull();
-            RuleFor(x => x.Favorite).NotEmpty();
-
 
             RuleFor(x => x.ProductName).MaximumLength(100);
             RuleFor(x => x.UnitPrice).GreaterThan(0);
