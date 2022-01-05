@@ -24,9 +24,13 @@ namespace DataAccess.Concrete
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<BasketDetail> BasketDetails { get; set; }
         public DbSet<CategorySub> CategorySubs { get; set; }
-        public DbSet<Comment> Comments { get; set; }
+        public DbSet<AddressDetail> AddressDetails { get; set; }
         public DbSet<CreditCart> CreditCarts { get; set; }
         public DbSet<Customer> Customers { get; set; }
-
+        public DbSet<Favorite> Favorites { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public CampaignDetail CampaignDetails { get; set; }
+        public DbSet<Campaign> Campaigns { get; set; }
+        public DbSet<Payment> Payments { get; set; }
     }
 }

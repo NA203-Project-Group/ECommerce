@@ -2148,8 +2148,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Autofac.Extras.DynamicProxy": "6.0.0",
-          "FluentValidation": "10.3.6",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.13"
+          "FluentValidation": "10.3.6"
         },
         "compile": {
           "bin/placeholder/Core.dll": {}
@@ -7464,19 +7463,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mustafa\\.nuget\\packages\\": {}
+    "C:\\Users\\Barış\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mustafa\\Desktop\\ECommerce\\ConsoleUI\\ConsoleUI.csproj",
+      "projectUniqueName": "C:\\Users\\Barış\\source\\repos\\NA203-Project-Group\\ECommerce\\ConsoleUI\\ConsoleUI.csproj",
       "projectName": "ConsoleUI",
-      "projectPath": "C:\\Users\\Mustafa\\Desktop\\ECommerce\\ConsoleUI\\ConsoleUI.csproj",
-      "packagesPath": "C:\\Users\\Mustafa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mustafa\\Desktop\\ECommerce\\ConsoleUI\\obj\\",
+      "projectPath": "C:\\Users\\Barış\\source\\repos\\NA203-Project-Group\\ECommerce\\ConsoleUI\\ConsoleUI.csproj",
+      "packagesPath": "C:\\Users\\Barış\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Barış\\source\\repos\\NA203-Project-Group\\ECommerce\\ConsoleUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Mustafa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Barış\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7490,8 +7489,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Mustafa\\Desktop\\ECommerce\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\Mustafa\\Desktop\\ECommerce\\Business\\Business.csproj"
+            "C:\\Users\\Barış\\source\\repos\\NA203-Project-Group\\ECommerce\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\Barış\\source\\repos\\NA203-Project-Group\\ECommerce\\Business\\Business.csproj"
             }
           }
         }
@@ -7526,7 +7525,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
