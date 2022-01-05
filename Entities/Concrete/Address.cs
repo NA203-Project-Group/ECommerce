@@ -9,11 +9,8 @@ namespace Entities.Concrete
 {
     public class Address : IEntity
     {
-        public int ID { get; set; }
         public int AddressID { get; set; }
-        public int CityID { get; set; }
-        public int DistrictID { get; set; }
-        public string BuildingNumber { get; set; }
+        public int CustomerID { get; set; }
 
     }
 }

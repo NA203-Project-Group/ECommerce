@@ -7,7 +7,7 @@ using Entities.Concrete;
 
 namespace Business.Abstract
 {
-    public interface ICommentService : IServiceRepositoryBase<Comment>
+    public interface IAddressDetailService : IServiceRepositoryBase<AddressDetail>
     {
 
     }

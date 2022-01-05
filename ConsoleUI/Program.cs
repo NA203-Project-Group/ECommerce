@@ -23,8 +23,7 @@ namespace ConsoleUI
             {
                 ProductImage = "yazıolı",
                 UnitPrice = 199,
-                Favorite = true,
-                CategoryId = 1,
+                CategoryID = 1,
                 
             };
             productManager.Add(product);

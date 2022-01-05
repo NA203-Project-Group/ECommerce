@@ -28,7 +28,7 @@ namespace Business.Concrete
 
         public IDataResult<Address> Get(int id)
         {
-            return new SuccessDataResult<Address>(_addressDal.Get(a=>a.ID == id));
+            return new SuccessDataResult<Address>(_addressDal.Get(a=>a.AddressID == id));
         }
         [ValidationAspect(typeof(AddressValidator))]
         public IResult Add(Address entity)

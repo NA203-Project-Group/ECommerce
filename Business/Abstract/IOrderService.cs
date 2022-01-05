@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Core.DataAccess;
 using Entities.Concrete;
 
-namespace DataAccess.Abstract
+namespace Business.Abstract
 {
-    public interface ICommentDal : IEntityRepository<Comment>
+   public interface IOrderService : IServiceRepositoryBase<Order>
     {
+
     }
 }

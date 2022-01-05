@@ -36,9 +36,6 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<CityManager>().As<ICityService>().SingleInstance();
             builder.RegisterType<EfCityDal>().As<ICityDal>().SingleInstance();
 
-            builder.RegisterType<CommentManager>().As<ICommentService>();
-            builder.RegisterType<EfCommentDal>().As<ICommentDal>();
-
             builder.RegisterType<CreditCartManager>().As<ICreditCartService>();
             builder.RegisterType<EfCreditCartDal>().As<ICreditCartDal>();
 
@@ -53,6 +50,31 @@ namespace Business.DependencyResolvers.Autofac
 
             builder.RegisterType<ProductManager>().As<IProductService>().SingleInstance();
             builder.RegisterType<EfProductDal>().As<IProductDal>().SingleInstance();
+
+
+            builder.RegisterType<AddressDetailManager>().As<IAddressDetailService>();
+            builder.RegisterType<EfAddressDetailDal>().As<IAddressDetailDal>();
+
+
+            builder.RegisterType<FavoriteManager>().As<IFavoriteService>();
+            builder.RegisterType<EfFavoriteDal>().As<IFavoriteDal>();
+
+
+            builder.RegisterType<OrderManager>().As<IOrderService>();
+            builder.RegisterType<EfOrderDal>().As<IOrderDal>();
+
+
+            builder.RegisterType<CampaignDetailManager>().As<ICampaignDetailService>();
+            builder.RegisterType<EfCampaignDetailDal>().As<ICampaignDetailDal>();
+
+
+            builder.RegisterType<CampaignManager>().As<ICampaignService>();
+            builder.RegisterType<EfCampaignDal>().As<ICampaignDal>();
+
+
+            builder.RegisterType<PaymentManager>().As<IPaymentService>();
+            builder.RegisterType<EfPaymentDal>().As<IPaymentDal>();
+
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces()

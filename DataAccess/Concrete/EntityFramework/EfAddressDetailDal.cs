@@ -9,7 +9,7 @@ using Entities.Concrete;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfCommentDal : EfEntityRepositoryBase<Comment,NorthwindContext>,ICommentDal
+    public class EfAddressDetailDal : EfEntityRepositoryBase<AddressDetail, NorthwindContext>, IAddressDetailDal
     {
 
     }

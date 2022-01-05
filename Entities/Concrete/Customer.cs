@@ -16,7 +16,6 @@ namespace Entities.Concrete
         public string CustomerPassword { get; set; }
         public string CustomerGsm { get; set; }
         public int CartID { get; set; }
-        public int CommnetID { get; set; }
-        public int AddressID { get; set; }
+        public int FavID { get; set; }
     }
 }

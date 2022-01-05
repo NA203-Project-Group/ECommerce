@@ -2148,8 +2148,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Autofac.Extras.DynamicProxy": "6.0.0",
-          "FluentValidation": "10.3.6",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.13"
+          "FluentValidation": "10.3.6"
         },
         "compile": {
           "bin/placeholder/Core.dll": {}
